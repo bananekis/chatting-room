@@ -5,6 +5,8 @@
 Chatting Room is a Live Chat App powered by `Stream API`. You can create your own channels, invite members and create DMs.
 Authentification for user login/sign up is handled on backend using `Node.js`.
 
+![Alt text](client/public/preview.png?raw=true "App Overview")
+
 ## Auth page
 
 Forlumar on auth page handles `empty inputs`, checks whether the `passwords are matching` together while creating a new user and won't let the user create
@@ -21,13 +23,15 @@ User is able to `edit` channel name, `create` a new channel or `create` a direct
 
 `It is required to fill in both .env files from client and server side folders by your own keys which can be found on https://getstream.io/`
 
++ When installing node packages for client-side folder I'd recommend adding `--force` flag after npm install to prevent installing non-deprecated packages
+
 `Note, that URL constant in config.ts file within the client folder is set to http://localhost:5000/auth , this can be changed depending where your server is hosted on`
 
 ## Available scripts
 
 > In the project directory, you can run:
 
-### `npm run`
+### `npm run` for client side and `npm run dev` for server side
 
 - Runs the app in the development mode.\
 

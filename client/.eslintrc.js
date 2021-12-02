@@ -63,6 +63,12 @@ module.exports = {
     "react/display-name": 0,
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
   },
   plugins: ["sort-imports-es6-autofix"],
   settings: {

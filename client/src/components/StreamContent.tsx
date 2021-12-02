@@ -58,15 +58,16 @@ const StreamContent = () => {
     );
   }
 
-  const EmptyState: React.ComponentType<EmptyStateIndicatorProps> | undefined =
-    () => (
-      <DivEmptyState>
-        <PChatHistory>This is the beginning of your chat history.</PChatHistory>
-        <PChatInfo>
-          Send messages, attachments, links, emojis, and more!
-        </PChatInfo>
-      </DivEmptyState>
-    );
+  const EmptyState:
+    | React.ComponentType<EmptyStateIndicatorProps>
+    | undefined = () => (
+    <DivEmptyState>
+      <PChatHistory>This is the beginning of your chat history.</PChatHistory>
+      <PChatInfo>
+        Send messages, attachments, links, emojis, and more!
+      </PChatInfo>
+    </DivEmptyState>
+  );
 
   return (
     <DivStreamContent>
